@@ -1,0 +1,3 @@
+gcc test.c -fPIC -shared -o libtest.so
+
+go build main.go cfuns.go

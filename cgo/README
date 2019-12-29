@@ -1,0 +1,12 @@
+# CGO 小测试
+
+test1: 结构体和指针传参
+test2: c使用go函数实现回调
+
+1. 编译
+gcc test.c -fPIC -shared -o libtest.so
+go build main.go cfuns.go
+
+2. 运行
+export LD_LIBRARY_PATH=`pwd`
+./main
